@@ -1,0 +1,121 @@
+/* ===================================
+    harua.kr
+====================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard.css');
+
+.fm-pop{font-family: 'Poppins', sans-serif;}
+.fm-out{font-family: 'Outfit', sans-serif;}
+.fm-ten{font-family: 'Pretendard', sans-serif;}
+
+/*   General   :) */
+
+
+/*   Side menu   :) */
+#side-menu a    {font-family: 'Poppins', sans-serif;}
+
+
+/*   Home   :) */
+
+
+/*   Aobut me   :) */
+#page2 #work_slider p   {font-size:16px}
+.services-item          {color:#eee}
+.services-item b        {font-size:17px; font-weight: 500;}
+.services-item span     {font-weight: 300; line-height: 188%}
+
+
+/*   Recommendations   :) */
+.testimonial-quote          {width:100%}
+.testimonial-quote h1       {letter-spacing: 0}
+.testimonial-quote span     {font-family: 'Pretendard'; font-weight: 300;}
+.recommendation p           {color:#fafafa; font-size:16px; font-family: 'Pretendard';  font-weight: 200; line-height: 170%; margin-bottom:15px}
+.recommendation b           {font-size:17px; font-weight: 500;}
+#page3 .owl-dots>.owl-dot   {margin: 2px -12px !important;}
+#page3 .owl-dots            {margin-left: 10px}
+
+/*   Tech Stack   :) */
+#page4 h6       {text-transform: none !important;font-weight: 400}
+#page4 h6 img   {width: 19px; margin: -5px 5px 0;}
+
+
+/*   Portfolio   :) */
+
+
+/*   Contact   :) */
+.contact-title       {font-size:40px; font-weight: 100; color: #ffffff; line-height: 1.15; margin-bottom: 4.2rem;}
+.contact-title b     {font-weight: 500; letter-spacing: -.5px}
+.contact-title span  {font-size:38px; letter-spacing: -.5px}
+.contact-me p        {color:#fafafa; font-weight: 200; font-size:16px; line-height: 188%; font-family: 'Pretendard';}
+.contact-me a        {color:#eee; font-weight: 200; font-size:16px; font-family: 'outfit'; }
+.contact-me i        {color:#eee; margin-right:4px; font-size:13px}
+
+
+/*   404   :) */
+.bg-error{
+  position: fixed;top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh;
+  background: url("../images/cover-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.error{
+  position: absolute;top: 46%;left: 50%;transform: translate(-50%, -50%);
+  color: #fafafa; font-family: 'Poppins';text-align: center;
+  width: 300px;height: 200px;
+  z-index: 1;
+}
+.error h1 {margin:0 0 32px;font-size:60px;font-weight: 100;}
+.error h2 {margin:0 0 40px;font-size:22px;font-weight: 200;color:#cccccc}
+.error a  {
+  width:100px;padding:3px 12px 5px;border:1px solid #1188ff;color:#1188ff; font-size:16px;font-weight: 400;text-decoration: none;
+  transition-duration: 0.3s !important; transition-timing-function: ease-in-out!important;
+}
+.error a:hover {color:#fafafa;border-color:#fafafa;}
+
+
+/*   Media Queries   :) */
+@media (max-width: 1024px) {
+#page2 #work_slider p   {font-size:15px}
+.services-item b        {font-size:16px}
+.services-item p br,.recommendation br{display: none;}
+.services-item .show-br br            {display: inline;}
+.recommendation p {font-size:15px}
+.recommendation b {font-size:16px}
+}
+
+@media (max-width: 990px) {
+.navbar-standard  {padding: 18px 22px 15px 15px}
+.my-auto          {padding:4rem 3rem}
+.bg-about, .bg-hero, .bg-tech, .bg-portfolio, .bg-contact {
+    background-position: center center;
+    background-size: cover;
+}
+#page6 .contact-body {padding: 0 1.5rem}
+.contact-me p        {font-size:15px}
+
+@media (max-width: 426px) {
+.navbar img       {width: 120px;}
+.navbar-standard  {padding: 13px 0 10px 13px}
+.my-auto  {padding:0 2.5rem}
+.bg-about {background-position: right;}
+.bg-hero  {background-position: left;}
+#page3            {border-top:3px solid #212121; border-bottom: 2px solid #212121}
+#page3 .owl-dots  {margin-left: 0}
+#page3 .opacity-3 {opacity: 0.1}
+#page4 .team-progress .progress-item{margin-bottom: 1.8rem;}
+#page4 .team-progress    {margin: 0; padding:0}
+#page6             {border-top:3px solid #212121;}
+#page6 input      {padding:1.5rem 0.5rem !important}
+#page6 .contact-body{height: 330px}
+#page6 .contact-title{font-size:32px}
+#page6 .contact-title span  {font-size:27px; letter-spacing: -.5px}
+}
+
+@media (max-width: 321px) {
+.my-auto  {padding:0 1.5rem}
+#work_slider .owl-dots .owl-dot {margin:2px 16px}
+}
